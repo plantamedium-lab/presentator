@@ -1,6 +1,8 @@
 Presentator [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 ======================================================================
 
+Plantamedium.de
+
 ![img](docs/interface.png)
 
 [Presentator](https://presentator.io) is design presentation and collaboration platform.
