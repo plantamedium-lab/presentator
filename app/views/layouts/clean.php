@@ -18,7 +18,7 @@ AppAsset::register($this);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <title><?= $this->title ? (Html::encode($this->title) . ' - ') : '' ?>Presentator</title>
+    <title><?= $this->title ? (Html::encode($this->title) . ' - ') : '' ?>Plantamedium Feedback</title>
     <link href="/images/favicon.png?v=1499601723" rel="shortcut icon" type="image/png">
     <?php $this->head() ?>
 </head>

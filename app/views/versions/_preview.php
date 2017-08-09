@@ -58,8 +58,9 @@ $hasScreens = !empty($activeVersion->screens);
         </div>
 
         <nav class="panel-menu">
-            <div class="ctrl-wrapper ctrl-left">
+                   <div class="ctrl-wrapper ctrl-left">
                 <ul>
+                    <!--
                     <li id="slider_prev_handle" class="ctrl-item slider-nav-handle slider-prev"><i class="ion ion-android-arrow-back"></i></li>
                     <li class="ctrl-item info-handle">
                         <i class="ion ion-ios-information-outline"></i>
@@ -92,12 +93,48 @@ $hasScreens = !empty($activeVersion->screens);
                             <?php endforeach ?>
                         </div>
                     </li>
+                    -->
                 </ul>
             </div>
 
             <?php if ($hasScreens): ?>
                 <div class="ctrl-wrapper ctrl-center">
                     <ul>
+                    <li id="slider_prev_handle" class="ctrl-item slider-nav-handle slider-prev"><i class="ion ion-android-arrow-back"></i></li>
+                    <li class="ctrl-item info-handle">
+                        <i class="ion ion-ios-information-outline"></i>
+                        <div class="dropdown-menu info-dropdown">
+                            <h6 class="title m-b-10" title="<?= Html::encode($project->title) ?>"><?= Html::encode($project->title) ?></h6>
+                            <span class="hint"><?= Yii::t('app', 'Project admins') ?></span>
+                            <?php foreach ($project->users as $user): ?>
+                                <div class="table-wrapper project-user">
+                                    <div class="table-cell min-width">
+                                        <figure class="avatar small">
+                                            <img data-src="<?= $user->getAvatarUrl(true) ?>" alt="Avatar" class="lazy-load" data-priority="low">
+                                        </figure>
+                                    </div>
+                                    <div class="table-cell p-l-10 max-width name">
+                                        <?= Html::encode($user->getIdentificator()) ?>
+                                    </div>
+                                    <?php if (!Yii::$app->user->isGuest && Yii::$app->user->identity->email == $user->email): ?>
+                                        <div class="table-cell p-l-10 min-width">
+                                            <a href="<?= Url::to(['site/index']) ?>" data-cursor-tooltip="<?= Yii::t('app', 'Dashboard') ?>">
+                                                <i class="ion ion-android-home"></i>
+                                            </a>
+                                        </div>
+                                    <?php endif ?>
+                                    <div class="table-cell p-l-10 min-width">
+                                        <a href="mailto: <?= Html::encode($user->email) ?>" data-cursor-tooltip="<?= Yii::t('app', 'Send an email') ?>">
+                                            <i class="ion ion-ios-email"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <?php endforeach ?>
+                        </div>
+                    </li>
+
+
+
                         <?php if (count($project->versions) > 1): ?>
                             <li id="panel_versions_handle" class="ctrl-item versions-handle" data-cursor-tooltip="<?= Yii::t('app', 'Change versions') ?>">
                                 <select class="versions-select selectify-select">
@@ -128,13 +165,25 @@ $hasScreens = !empty($activeVersion->screens);
                             <i class="ion ion-ios-photos active-icon"></i>
                             <i class="ion ion-ios-photos-outline inactive-icon"></i>
                         </li>
+                        <li id="slider_next_handle" class="ctrl-item slider-nav-handle slider-next"><i class="ion ion-android-arrow-forward"></i></li>
+
                     </ul>
                 </div>
             <?php endif; ?>
 
             <div class="ctrl-wrapper ctrl-right">
                 <ul>
-                    <li id="slider_next_handle" class="ctrl-item slider-nav-handle slider-next"><i class="ion ion-android-arrow-forward"></i></li>
+                    <!--
+                     <li id="slider_next_handle" class="ctrl-item slider-nav-handle slider-next"><i class="ion ion-android-arrow-forward"></i></li>
+                     -->
+
+                    <li class="ctrl-item ">
+                         <a href="http://www.plantamedium.de"><img class="logo-pm logo-large" src="/images/logo-plantamedium-large.png" alt="Logo Plantamedium"></a>
+                         <a href="http://www.plantamedium.de"><img class="logo-pm logo-medium" src="/images/logo-plantamedium-medium.png" alt="Logo Plantamedium"></a>
+                         <a href="http://www.plantamedium.de"><img class="logo-pm logo-small" src="/images/logo-plantamedium-small.png" alt="Logo Plantamedium"></a>
+                            
+                    </li>
+                    
                 </ul>
             </div>
         </nav>

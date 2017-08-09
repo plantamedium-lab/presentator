@@ -41,9 +41,9 @@ $isGuest = Yii::$app->user->isGuest;
             <div class="ctrl-wrapper ctrl-left">
                 <ul>
                     <li id="slider_prev_handle" class="ctrl-item slider-nav-handle slider-prev"><i class="ion ion-android-arrow-back"></i></li>
+                     
                 </ul>
             </div>
-
             <div class="ctrl-wrapper ctrl-center">
                 <ul>
                     <li id="panel_hotspots_handle" class="ctrl-item hotspots-handle active" data-cursor-tooltip="<?= Yii::t('app', 'Hotspots mode') ?>" data-cursor-tooltip-class="hotspots-mode-tooltip"><i class="ion ion-ios-crop"></i></li>

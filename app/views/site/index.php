@@ -78,8 +78,8 @@ $this->title = Yii::t('app', 'Dashboard') ;
     </div>
 <?php else: ?>
     <div class="welcome-panel">
-        <img class="featured" src="/images/logo_stamp.png" alt="Presentator logo" width="100">
-        <p><?= Yii::t('app', 'Hello and welcome to Presentator!') ?></p>
+        <img class="featured" src="/images/logo_stamp.png" alt="Plantamedium logo" width="100">
+        <p><?= Yii::t('app', 'Hello and welcome to Plantamedium Feedback!') ?></p>
         <p><?= Yii::t('app', 'To create your first project click on the button below:') ?></p>
         <div class="block m-t-30 m-b-30">
             <a href="<?= Url::to(['projects/index', '#' => 'project_create_popup']) ?>" class="block btn btn-lg btn-cons btn-success">

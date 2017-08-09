@@ -7,19 +7,19 @@ $baseFont: 'Ubuntu', Arial, Helvetica, sans-serif;
 $iconFont: 'Ionicons';
 
 // colors
-$primaryColor:        #7a82f4;
-$secondaryColor:      #322955;
+$primaryColor:        #0099cc;
+$secondaryColor:      #0f0f0f;
 $lightSecondaryColor: lighten($secondaryColor, 3%);
-$successColor:        #44e4a6;
+$successColor:        #5b8f22;
 $warningColor:        #ffe606;
-$dangerColor:         #fe7c7b;
-$greyColor:           #d8dfec;
+$dangerColor:         #dd4814;
+$greyColor:           #dddddd;
 $lightGreyColor:      #eff2f8;
 $lighterGreyColor:    lighten($lightGreyColor, 1.6%);
 $txtColor:            #909caa;
-$lightSidebarColor:   #796fa2;
-$lighterSidebarColor: lighten($lightSidebarColor, 10%);
-$overlayColor:        #2e364e;
+$lightSidebarColor:   #fff;
+$lighterSidebarColor: darken($lightSidebarColor, 10%);
+$overlayColor:        #0f0f0f;
 
 // sizes
 $baseSpacing:         30px; // padding and margin

@@ -22,7 +22,7 @@ $this->title = Yii::t('app', 'Login');
     <div class="table-cell text-center">
         <a href="<?= Url::to(['site/index']) ?>" class="logo">
             <img src="/images/logo_large_white.png" alt="Presentator logo">
-            <div class="txt">Presentator</div>
+            <div class="txt">Plantamedium Feedback</div>
         </a>
         <div class="clearfix"></div>
         <div id="auth_panel" class="auth-panel">

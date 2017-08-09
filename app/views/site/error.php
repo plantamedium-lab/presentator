@@ -16,7 +16,7 @@ $this->title = $name;
     <div class="table-cell text-center">
         <div class="site-error panel panel-md padded">
             <a href="<?= Url::home() ?>" class="logo">
-                <img src="/images/logo_large.png" alt="Presentator logo">
+                <img src="/images/logo_large.png" alt="Plantamedium logo">
             </a>
             <div class="clearfix m-b-15"></div>
 

@@ -4,6 +4,71 @@
     position: relative;
 }
 
+
+//Plantamedium Logo Header
+
+.logo-pm{
+    margin-top:8px;
+    margin-bottom:5px;
+    margin-right:20px;
+}
+.logo-small{
+   display: none;
+}
+.logo-medium{
+    margin-top:18px;
+    width: 100px;
+    height:auto;
+    display: none;
+}
+.logo-small{
+ 
+    height:32px;;
+    width: auto;
+    display: none;
+}
+
+
+@media only screen and (max-width: 840px){
+   .logo-large{
+     display: none;
+   }
+    .logo-small{
+        display:none;
+    }
+
+   .logo-medium{
+     display: block;
+   }
+}
+@media only screen and (max-width: 700px){
+   .logo-large{
+     display: none;
+   }
+    .logo-medium{
+        display:none;
+    }
+
+   .logo-small{
+     display: block;
+   }
+}
+
+@media only screen and (max-width: 590px){
+   .logo-large{
+     display: none;
+   }
+    .logo-medium{
+        display:none;
+    }
+    .logo-small{
+        display:none;
+    }
+
+  
+}
+
+
 // Preview links (Project share)
 .preview-links-wrapper .preview-link {
     &.view {

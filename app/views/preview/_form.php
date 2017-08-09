@@ -10,8 +10,8 @@ use common\widgets\CActiveForm;
     'id' => 'project_access_form',
 ]); ?>
     <div class="info-block m-b-30">
-        <a href="" class="logo margin-bottom-30" target="_blank" title="Presentator">
-            <img src="<?= Yii::getAlias('@web/images/logo_large.png') ?>" alt="Presentator logo">
+        <a href="" class="logo margin-bottom-30" target="_blank" title="Plantamedium">
+            <img src="<?= Yii::getAlias('@web/images/logo_large.png') ?>" alt="Plantamedium logo">
         </a>
         <div class="clearfix m-b-15"></div>
         <p>

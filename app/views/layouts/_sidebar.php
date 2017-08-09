@@ -6,7 +6,7 @@ $action     = Yii::$app->controller->action->id;
 ?>
 <aside id="page_sidebar" class="page-sidebar">
     <a href="<?= Url::to(['site/index']) ?>" class="logo">
-        <img src="<?= Yii::getAlias('@web/images/logo.png') ?>?v=1492082790" alt=" Presentator logo">
+        <img src="<?= Yii::getAlias('@web/images/logo.png') ?>?v=1492082790" alt=" Plantamedium logo"> 
     </a>
     <nav class="main-menu">
         <ul>

@@ -20,8 +20,8 @@ $this->title = Yii::t('app', 'Reset password');
 <div class="table-wrapper full-vh-height">
     <div class="table-cell text-center">
         <a href="<?= Url::home() ?>" class="logo">
-            <img src="/images/logo_large_white.png" alt="Presentator logo">
-            <div class="txt">Presentator</div>
+            <img src="/images/logo_large_white.png" alt="Plantamedium logo">
+            <div class="txt">Plantamedium Feedback</div>
         </a>
         <div class="clearfix"></div>
         <div id="auth_panel" class="auth-panel">
